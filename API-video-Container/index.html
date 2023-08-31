@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled and minified CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social-media</title>
+    <script src="./profilepage.js"></script>
+  </head>
+
+  <body onload="gallery()">
+    <div class="social">
+      <div class="header row">
+        <div class="col">
+          <img src="./images/back.png" alt="back" class="headerimg" />
+        </div>
+        <div class="col">
+          <h3 class="text-center header-text">User-name</h3>
+        </div>
+        <div class="col">
+          <img
+            src="./images/more.png"
+            alt="more"
+            class="headerimg2 float-end"
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#demo1"
+          />
+        </div>
+        <!-- offcanvas sidebar -->
+        <div class="offcanvas offcanvas-start" id="demo1">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title">
+              <p>Done With 💕 By,</p>
+              <h1>Monish R</h1>
+            </div>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <h3>Projects</h3>
+
+            <label for="gitLink">Explore My GitHub Profile</label>
+            <a href="https://github.com/Monish01-08-2003" id="gitLink" class="p"
+              >GitHub</a
+            >
+            <label for="linkedin">Explore My LinkedIn Profile</label>
+            <a
+              href="www.linkedin.com/in/monish-r-b11325275"
+              id="gitLink"
+              class="p"
+              >LinkedIn</a
+            >
+            <br />
+          
+         
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profileimg mx-auto">
+          <img
+            src="./images/portrait-handsome-confident-stylish-hipster-lambersexual-model-sexy-modern-man-dressed-elegant-black-suit-fashion-male-posing-studio-dark-background (2).jpg"
+            class="mx-auto"
+            id="profileimage"
+          />
+        </div>
+        <div class="row">
+          <div class="col mx-auto text-center">
+            <p>Profile-id</p>
+          </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="col mx-auto text-center">
+            <div id="following"></div>
+            <p class="text-muted">Following</p>
+          </div>
+          <div class="col mx-auto text-center">
+            <div id="Fans"></div>
+            <p class="text-muted">Fans</p>
+          </div>
+          <div class="col mx-auto text-center">
+            <div id="Hearts"></div>
+            <p class="text-muted">Hearts</p>
+          </div>
+        </div>
+        <!-- profile section -->
+        <div class="row profilebutton mx-auto mt-auto container">
+          <div class="col mx-auto text-center">
+            <button
+              class="probutton"
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="tooltip"
+              title="monishr01.08.2003@gmail.com!"
+            >
+              Message
+            </button>
+          </div>
+          <div class="col mx-auto text-center mt-auto">
+            <a href="#" class="probutton">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="popover"
+                title="Popover Header"
+                data-bs-content="Some content inside the popover"
+              >
+                <img src="./images/user.png" alt="" class="userimg" />
+              </button>
+            </a>
+          </div>
+          <div class="col mx-auto text-center mt-auto">
+            <a href="#" class="probutton">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="popover"
+                title="Monish R"
+                data-bs-content="Made With js"
+              >
+                <img src="./images/video-camera.png" alt="" class="userimg" />
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="profbtn">
+          <div class="fixedheader">
+            <a href="">
+              <img src="./images/love.png" class="fixedheaderimg" alt="" />
+            </a>
+            <a href="">
+              <img src="./images/menu.png" class="fixedheaderimg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="gallerycontent">
+          <div id="gallery" class=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./profilepage.js"></script>
+</html>
+<style>
+  .header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+  }
+  .headerimg {
+    display: flex;
+    float: left;
+    height: 25px;
+    width: 25px;
+  }
+  .headerimg2 {
+    float: right;
+
+    height: 25px;
+    width: 25px;
+  }
+  #profileimage {
+    height: 100px;
+    border-radius: 100%;
+  }
+  .profileimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile {
+    padding-top: 5rem;
+  }
+  .probutton {
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    color: rgb(56, 56, 56);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+  .userimg {
+    height: 25px;
+  }
+  .profilebutton {
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+  .fixedheaderimg {
+    height: 25px;
+  }
+  .fixedheader {
+    margin: 0.5rem 0rem;
+    border: 0.5px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 26rem;
+    justify-content: center;
+  }
+  .fixedheaderimg {
+    margin: 0.5rem 0rem;
+    line-height: 40px;
+  }
+  video {
+    height: 200px;
+    gap: 10px;
+    border: 1px solid white;
+  }
+  #gallery {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  a {
+    list-style-type: none;
+    padding-bottom: 5px;
+  }
+  @media only screen and (max-width: 600px) {
+    .headerimg .headerimg {
+      width: auto;
+      height: 100px;
+      width: 100px;
+    }
+    video {
+      height: 110px;
+    }
+    .headerimg {
+      margin-left: 20px;
+    }
+    .fixedheader {
+      gap: 11rem;
+    }
+    .header-text {
+      font-size: 22px;
+    }
+  }
+  .fa-heart-o {
+    color: red;
+    cursor: pointer;
+  }
+
+  .fa-heart {
+    color: red;
+    cursor: pointer;
+  }
+  * {
+    scroll-behavior: smooth;
+  }
+</style>
+<script>
+  //PopOver
+  var popoverTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+  );
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
+  });
+  //Tooltip bootstrap
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>

@@ -1,0 +1,55 @@
+// url = "https://webhook.site/b2d8b780-564f-415b-bf25-db5fadc4e3e3";
+// function profile() {
+//   try {
+//     fetch(url, {
+//       mode: 'no-cors'
+//   })
+//       .then((response) => {
+//         console.log(response);
+//         response.text();
+//       })
+//       .then((data) => {
+//         console.log(data);
+//       });
+//   } catch (error) {
+//     console.log(error);
+//   }
+//   // .then((data) => {
+//   //   // var finalimage = data[1].image;
+//   //   // console.log(finalimage);
+//   //   // document.getElementById("profileimage").src = finalimage;
+//   // });
+// }
+
+// function gallery() {
+//   fetch(url)
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//       let gallery = "";
+//       data.map((values) => {
+//         gallery += `<img src="${values.image}" alt="more" />`;
+//       });
+//       document.getElementById("gallery").innerHTML = gallery;
+//     });
+// }
+
+// url = "https://fakestoreapi.com/products";
+// function profile() {
+//   fetch(url)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data[2].image);
+//     })
+
+//     .catch((error) => {
+//       console.log("Error:" + error);
+//     });
+// }
+// function displayimage(image){
+//     document.getElementById('profileimage').src=;
+// }
